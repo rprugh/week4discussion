@@ -46,16 +46,18 @@ p {
 
 .gallery {
    display: grid;
-   grid-template-columns: 250px 250px;
+   grid-template-columns: 1fr 1fr;
    border: 3px solid black;
    width: 90%;
    justify-content: space-evenly;
    margin: auto;
    align-items: center;
-
 }
 
 .gallery img {
    width: 100%;
-   /* margin: 20px; */
+}
+
+.gallery img:last-child {
+   grid-column: 1 / -1;
 }
